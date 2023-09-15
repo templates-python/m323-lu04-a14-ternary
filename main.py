@@ -10,7 +10,7 @@ def calculate_discount(price, is_on_sale):
     float: Der Preis des Produkts nach Rabatt.
     """
     # TODO: Implementieren Sie die Funktion
-    pass
+    return price * 0.9 if is_on_sale else price
 
 
 if __name__ == '__main__':
