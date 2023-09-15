@@ -1,12 +1,26 @@
-def calculate():
+def calculate_discount(price, is_on_sale):
     """
-    calculates the total
-    :return: None
+    Berechnet den Preis eines Produkts nach Rabatt.
+
+    Args:
+    price (float): Der ursprüngliche Preis des Produkts.
+    is_on_sale (bool): Gibt an, ob das Produkt im Angebot ist oder nicht.
+
+    Returns:
+    float: Der Preis des Produkts nach Rabatt.
     """
-    price = 15.75
-    quantity = 3  # TODO change quantity to 5
-    print(f'Total: {price * quantity}')
+    # TODO: Implementieren Sie die Funktion
+    pass
 
 
 if __name__ == '__main__':
-    calculate()
+    products = [
+        {"name": "Laptop", "price": 1000.0, "is_on_sale": True},
+        {"name": "Maus", "price": 50.0, "is_on_sale": False},
+        {"name": "Tastatur", "price": 70.0, "is_on_sale": True}
+    ]
+
+    for product in products:
+        discounted_price = calculate_discount(product["price"], product["is_on_sale"])
+        print(
+            f"Produkt: {product['name']}, Originalpreis: {product['price']} Fr., Rabattierter Preis: {discounted_price} Fr.")
