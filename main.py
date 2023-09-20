@@ -4,7 +4,7 @@ def calculate_discount(price, is_on_sale):
 
     Args:
     price (float): Der ursprüngliche Preis des Produkts.
-    is_on_sale (bool): Gibt an, ob das Produkt im Angebot ist oder nicht.
+    is_on_sale (bool): Gibt an, ob das Produkt im Angebot ist oder nicht. Falls im Angebot, wird 10% Rabatt berechnet.
 
     Returns:
     float: Der Preis des Produkts nach Rabatt.
