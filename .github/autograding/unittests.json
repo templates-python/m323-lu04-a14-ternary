@@ -1,0 +1,8 @@
+[
+  {
+    "name": "test_calculate_discount",
+    "function": "test_calculate_discount",
+    "timeout": 10,
+    "points": 1
+  }
+]
