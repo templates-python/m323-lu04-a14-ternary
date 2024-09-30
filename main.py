@@ -13,14 +13,15 @@ def calculate_discount(price, is_on_sale):
     pass
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     products = [
         {"name": "Laptop", "price": 1000.0, "is_on_sale": True},
         {"name": "Maus", "price": 50.0, "is_on_sale": False},
-        {"name": "Tastatur", "price": 70.0, "is_on_sale": True}
+        {"name": "Tastatur", "price": 70.0, "is_on_sale": True},
     ]
 
     for product in products:
         discounted_price = calculate_discount(product["price"], product["is_on_sale"])
         print(
-            f"Produkt: {product['name']}, Originalpreis: {product['price']} Fr., Rabattierter Preis: {discounted_price} Fr.")
+            f"Produkt: {product['name']}, Originalpreis: {product['price']} Fr., Rabattierter Preis: {discounted_price} Fr."
+        )
