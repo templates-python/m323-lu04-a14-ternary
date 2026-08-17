@@ -1,3 +1,8 @@
+"""Rabattberechnung.
+
+Aufgabenstellung: https://wiki.bzz.ch/modul/m323/learningunits/lu04/aufgaben/ternary2
+"""
+
 def calculate_discount(price, is_on_sale):
     """
     Berechnet den Preis eines Produkts nach Rabatt.
@@ -21,7 +26,10 @@ if __name__ == "__main__":
     ]
 
     for product in products:
-        discounted_price = calculate_discount(product["price"], product["is_on_sale"])
+        product_name = product["name"]
+        product_price = product["price"]
+        discounted_price = calculate_discount(product_price, product["is_on_sale"])
         print(
-            f"Produkt: {product['name']}, Originalpreis: {product['price']} Fr., Rabattierter Preis: {discounted_price} Fr."
+            f"Produkt: {product_name}, Originalpreis: {product_price} Fr., "
+            f"Rabattierter Preis: {discounted_price} Fr."
         )
