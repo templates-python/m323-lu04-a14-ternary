@@ -1,3 +1,8 @@
+"""Rabattberechnung.
+
+Aufgabenstellung: https://wiki.bzz.ch/modul/m323/learningunits/lu04/aufgaben/ternary2
+"""
+
 def calculate_discount(price, is_on_sale):
     """
     Berechnet den Preis eines Produkts nach Rabatt.
